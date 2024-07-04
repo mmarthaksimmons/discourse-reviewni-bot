@@ -1,7 +1,6 @@
 import { apiInitializer } from "discourse/lib/api";
 import SearchBanner from "../components/search-banner";
-
-const axios = require('axios');
+import axios from "axios";
 
 
 export default apiInitializer("1.14.0", (api) => {
@@ -23,6 +22,7 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
   
 // ASIN Data API call
 // set up the request parameters
+
 const params = {
   api_key: "9FFE2360143A41CE980579367CE2131C",
   type: "reviews",
